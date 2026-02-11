@@ -1,6 +1,5 @@
 page {
     includeCSS {
-        # Example CSS file
         style  = EXT:sjsh-website/Resources/Public/Css/sjsh-theme.css
     }
 }
