@@ -1,22 +1,40 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:layout name="Default" />
 <f:section name="Main">
+    <div class="startpage">
+        <!-- Row 1: Links and Rechts -->
+        <div class="row row-1">
+            <div class="col-links">
+                <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: 0}" />
+            </div>
+            <div class="col-rechts">
+                <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: 1}" />
+            </div>
+        </div>
 
-    <div class="container">
-        <div class="alert alert-info">
-            <dl>
-                <dt>Template file</dt>
-                <dd>
-                    <code>typo3conf/ext/sjsh_website/Resources/Private/Templates/Page/Example.html</code>
-                </dd>
-                <dt>Backend Configuration</dt>
-                <dd>
-                    <code>typo3conf/ext/sjsh_website/Configuration/TsConfig/Page/Mod/WebLayout/BackendLayouts/example.tsconfig</code>
-                </dd>
-            </dl>
+        <!-- Row 2: TOP Links and TOP Rechts -->
+        <div class="row row-2">
+            <div class="col-top-links">
+                <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: 2}" />
+            </div>
+            <div class="col-top-rechts">
+                <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: 3}" />
+            </div>
+        </div>
+
+        <!-- Row 3: Top - Footer -->
+        <div class="row row-3">
+            <div class="col-top-footer">
+                <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: 4}" />
+            </div>
+        </div>
+
+        <!-- Row 4: FooterLinksKlein -->
+        <div class="row row-4">
+            <div class="col-footer-links-klein">
+                <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: 5}" />
+            </div>
         </div>
     </div>
-    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0'}" />
-
 </f:section>
 </html>

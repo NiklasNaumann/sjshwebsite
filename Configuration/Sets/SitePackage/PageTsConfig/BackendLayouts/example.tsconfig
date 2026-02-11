@@ -1,29 +1,58 @@
-#
-# BACKENDLAYOUT: EXAMPLE
-#
-mod {
-    web_layout {
-        BackendLayouts {
-            example {
-                title = LLL:EXT:sjsh_website/Resources/Private/Language/locallang_be.xlf:backend_layout.example
-                config {
-                    backend_layout {
-                        colCount = 1
-                        rowCount = 1
-                        rows {
-                            1 {
-                                columns {
-                                    1 {
-                                        name = LLL:EXT:sjsh_website/Resources/Private/Language/locallang_be.xlf:backend_layout.column.normal
-                                        colPos = 0
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                icon = EXT:sjsh_website/Resources/Public/Icons/BackendLayouts/example.svg
+mod.web_layout.BackendLayouts {
+  example {
+    title = LLL:EXT:sjsh_website/Resources/Private/Language/locallang_be.xlf:backend_layout.example
+    icon = content-container-columns-2
+    config {
+      backend_layout {
+        colCount = 3
+        rowCount = 4
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Links
+                colspan = 2
+                colPos = 0
+              }
+              2 {
+                name = Rechts
+                colPos = 1
+              }
             }
+          }
+          2 {
+            columns {
+              1 {
+                name = TOP Links
+                colspan = 2
+                colPos = 2
+              }
+              2 {
+                name = TOP Rechts
+                colPos = 3
+              }
+            }
+          }
+          3 {
+            columns {
+              1 {
+                name = Top - Footer
+                colspan = 3
+                colPos = 4
+              }
+            }
+          }
+          4 {
+            columns {
+              1 {
+                name = FooterLinksKlein
+                colspan = 3
+                colPos = 5
+              }
+            }
+          }
         }
+      }
     }
+  }
 }
