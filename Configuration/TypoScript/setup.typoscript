@@ -1,5 +1,5 @@
 page {
     includeCSS {
-        style  = EXT:sjsh-website/Resources/Public/Css/sjsh-theme.css
+        style  = EXT:sjsh_website/Resources/Public/Css/sjsh-theme.css
     }
 }
