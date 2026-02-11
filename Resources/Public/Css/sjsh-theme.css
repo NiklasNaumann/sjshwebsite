@@ -11868,7 +11868,8 @@ ul.wttwitter_feed li {
 
 a.btn-success {
     color: #FFF;
-    padding: font-weight:bold;
+    padding: 10px 20px;
+    font-weight:bold;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 45px;
