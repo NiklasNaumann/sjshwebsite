@@ -1,0 +1,2 @@
+page.includeCSS.sjshTheme = EXT:sjsh-website/Resources/Public/Css/sjsh-theme.css
+page.includeCSS.sjshTheme.forceOnTop = 0
