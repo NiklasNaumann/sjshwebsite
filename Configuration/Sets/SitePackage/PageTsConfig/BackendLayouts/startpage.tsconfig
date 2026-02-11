@@ -1,6 +1,6 @@
 mod.web_layout.BackendLayouts {
   exampleKey {
-    title = Example
+    title = Startpage
     icon = content-container-columns-2
     config {
       backend_layout {
