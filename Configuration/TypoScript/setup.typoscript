@@ -1,2 +1,6 @@
-page.includeCSS.sjshTheme = EXT:sjsh-website/Resources/Public/Css/sjsh-theme.css
-page.includeCSS.sjshTheme.forceOnTop = 0
+page {
+    includeCSS {
+        # Example CSS file
+        style  = EXT:sjsh-website/Resources/Public/Css/example.css
+    }
+}
