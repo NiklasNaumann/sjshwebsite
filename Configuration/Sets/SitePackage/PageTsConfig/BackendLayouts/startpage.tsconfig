@@ -1,5 +1,5 @@
 mod.web_layout.BackendLayouts {
-  exampleKey {
+  startpage {
     title = Startpage
     icon = content-container-columns-2
     config {
