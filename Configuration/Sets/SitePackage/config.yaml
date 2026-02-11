@@ -1,0 +1,4 @@
+name: schachjugend-schleswig-holstein/sjsh-website
+label: 'SJSH Website'
+dependencies:
+  - bootstrap-package/full
