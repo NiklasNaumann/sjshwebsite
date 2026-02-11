@@ -1,9 +1,0 @@
-page {
-    includeCSS {
-        style  = EXT:sjsh_website/Resources/Public/Css/sjsh-theme.css
-    }
-}
-
-config {
-    concatenateCss = 0
-}

@@ -1,6 +1,7 @@
 page {
     includeCSS {
         theme = EXT:sjsh_website/Resources/Public/Scss/Theme/theme.scss
+        style  = EXT:sjsh_website/Resources/Public/Css/sjsh-theme.css
     }
 
     includeJSLibs {
@@ -18,4 +19,8 @@ page {
     includeJSFooter {
         sjsh_website_scripts = EXT:sjsh_website/Resources/Public/JavaScript/main.js
     }
+}
+
+config {
+    concatenateCss = 0
 }
