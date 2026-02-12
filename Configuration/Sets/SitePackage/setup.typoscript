@@ -24,3 +24,21 @@ page {
 config {
     concatenateCss = 0
 }
+
+plugin.tx_bootstrappackage {
+  settings {
+    footer {
+      imprintPid = 12
+      privacyPid = 34
+      contactPid = 56
+    }
+  }
+  view {
+    partialRootPaths {
+      200 = EXT:sjsh_website/Resources/Private/Partials/
+    }
+    layoutRootPaths {
+      200 = EXT:sjsh_website/Resources/Private/Layouts/
+    }
+  }
+}
