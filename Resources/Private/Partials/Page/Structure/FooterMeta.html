@@ -1,0 +1,34 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:if
+    condition="{theme.meta.enable} || {theme.language.enable} || {theme.copyright.enable} || {theme.socialmedia.enable} || {theme.footernavigation.enable} || {theme.contact.enable}">
+    <section class="section footer-section footer-section-meta">
+        <div class="frame frame-background-none frame-space-before-none frame-space-after-none">
+            <div class="frame-group-container">
+                <div class="frame-group-inner">
+                    <div class="frame-container frame-container-default">
+                        <div class="frame-inner">
+                            <div class="container">
+                                <div class="row">
+                                    <div>
+                                        <p class="bodytext">
+                                            <a href="{f:uri.page(pageUid: settings.footer.imprintPid)}">Impressum</a> |
+                                            <a href="{f:uri.page(pageUid: settings.footer.privacyPid)}">Datenschutz</a>
+                                            |
+                                            <a href="{f:uri.page(pageUid: settings.footer.contactPid)}">Kontakt</a>
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <f:format.html>{theme.copyright.text}</f:format.html>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</f:if>
+
+</html>
