@@ -223,8 +223,6 @@ footer .sponsor-logos {
 
 }
 
-.row::before,
-.row::after {
-  content: " ";
-  display: table;
+.row {
+  display: flex;
 }
